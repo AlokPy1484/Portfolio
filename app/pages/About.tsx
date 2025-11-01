@@ -30,7 +30,7 @@ function About(){
                 </div>
                 <div className="flex flex-col justify-start items-center gap-5 w-70 pb-10 md:w-200">
                     <div className=" text-white text-3xl md:text-5xl">Exploring Technology, Creativity, and Real-World Impact</div>
-                    <div className="text-white text-sm md:text-2xl leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quidem eaque praesentium dolor dicta recusandae eos dolore, architecto labore expedita minus excepturi doloremque consequatur. Praesentium voluptatum qui neque ratione, ipsam officiis dolorem sequi nesciunt itaque impedit dicta voluptatem ea delectus. Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    <div className="text-white text-sm md:text-2xl leading-relaxed">I’m a passionate full-stack developer and open-source contributor who loves building scalable, secure, and user-friendly web applications. I enjoy solving real-world problems through clean code, creative design, and continuous learning across modern web and backend technologies.</div>
                 </div>
             </div>
         </div>

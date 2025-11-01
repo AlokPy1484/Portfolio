@@ -22,7 +22,9 @@ function Hero(){
         <ContainerTextFlip words={["Developer","Freelancer","Programmer"]} className="hidden md:flex mt-5 justify-center items-center"/></div>
               
       <ContainerTextFlip words={["Full Stack Developer","Website Freelancer","Compitative Programmer"]} className="flex md:hidden mt-5 justify-center items-center"/>
-      <div className="w-90 md:w-200 mt-5  md:text-2xl text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas a porro, nostrum assumenda ipsa magni! Vitae dolorem ex consequatur?</div>
+      <div className="w-90 md:w-200 mt-5  md:text-2xl text-zinc-400">
+        I design and develop efficient, secure, and scalable full-stack web solutions — blending clean design, modern technology, and reliable performance.
+        </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center w-full gap-5 md:gap-30 mt-5 md:mt-20">
         <div>
@@ -37,7 +39,7 @@ function Hero(){
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laudantium?
+              A modern, full-stack blogging platform for sharing ideas seamlessly.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
@@ -75,7 +77,7 @@ function Hero(){
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laudantium?
+    A sleek, responsive landing page built to convert visitors effectively.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image src={project2} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
@@ -114,7 +116,7 @@ function Hero(){
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laudantium?
+             An innovative solution built for Smart India Hackathon to tackle real-world challenges.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image src={project3} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
