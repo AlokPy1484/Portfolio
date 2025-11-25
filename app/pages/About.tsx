@@ -8,7 +8,7 @@ import { Linkedin, Mail, Phone } from "lucide-react"
 function About(){
 
     return(
-        <div className="flex flex-col items-center w-screen h-full pt-10 bg-black">
+        <div className="flex flex-col items-center w-screen h-full pt-10 bg-black  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_10px)] bg-size-[24px_24px]">
             <div className="text-7xl text-white">About Me</div>
             <div className="flex flex-col md:flex-row w-[80vw] gap-10 md:gap-40 justify-center items-center">
                 <div>

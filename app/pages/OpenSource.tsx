@@ -15,8 +15,8 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 function OSS(){
 
     return(
-    <div className="h-96 relative w-full overflow-hidden bg-black flex flex-col items-center justify-center">
-      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+    <div className="h-96 relative w-full overflow-hidden bg-black flex flex-col items-center justify-center ">
+      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
  
       <p className="text-center text-4xl mt-2 mb-10 text-zinc-400 relative z-20">
         OSS Contributions

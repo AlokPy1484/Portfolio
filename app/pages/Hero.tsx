@@ -14,7 +14,7 @@ function Hero(){
 
     return(
     <div className="flex w-screen h-full overflow-x-hidden bg-black">
-      <Vortex rangeY={800} className="flex flex-col justify-center p-5 md:p-25 items-start h-screen ">
+      <Vortex rangeY={800} className=" flex flex-col justify-center p-5 md:p-25 items-start h-screen ">
       <div className="flex flex-row gap-2 md:gap-5 mt-500 md:mt-150 text-7xl text-white text-left">Hi, I'm
         <PointerHighlight rectangleClassName='border-white'>
         <div>Alok</div>
