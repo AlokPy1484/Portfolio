@@ -1,13 +1,15 @@
 "use client";
 
 import { Vortex } from "@/components/ui/vortex";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import Image from "next/image";
 import project1 from "../../assets/project1.png"
 import project2 from "../../assets/project2.png"
 import project3 from "../../assets/project3.png"
+import ProjectCard from "@/components/ProjectCard";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 
 function Hero(){
@@ -26,123 +28,45 @@ function Hero(){
         I design and develop efficient, secure, and scalable full-stack web solutions — blending clean design, modern technology, and reliable performance.
         </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center w-full gap-5 md:gap-30 mt-5 md:mt-20">
-        <div>
-        <CardContainer className="inter-var w-80 rounded-xl border border-b-3 border-r-3">
-          <CardBody className="bg-black  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-zinc-600/[0.5] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-white dark:text-white">
-              Blognest
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-              A modern, full-stack blogging platform for sharing ideas seamlessly.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
-            </CardItem>
-            <div className="flex justify-between items-center mt-5">
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://github.com/AlokPy1484/BlogNestUI"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal text-white  dark:text-white"
-              >
-                Github →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://blog-nest-ui-98u2.vercel.app"
-                className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold">
-                Live Preview
-              </CardItem>
+      <div className="flex flex-col md:flex-row justify-center items-center w-full gap-5 md:gap-30 mt-45 md:mt-20">
+       {/* <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1} repo="www.google.com"/>
+       <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1}/>
+       <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1}/> */}
+          <div className="bg-black border-2 rounded-md px-2 border-zinc-900">
+            <div className="flex flex-col justify-center items-center w-80 p-2  rounded-md bg-black">
+                <div className=" text-2xl  text-white w-full">BlogNest</div>
+                <div className="text-sm text-zinc-600 py-2">A modern, full-stack blogging platform for sharing ideas seamlessly.</div>
+                <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 py-4 grayscale hover:grayscale-0"/>
+                <div className="flex flex-row justify-between items-center py-4 w-full">
+                    <Button variant="ghost" className="text-white"><a href="https://github.com/AlokPy1484/BlogNestUI">GitHub</a> </Button>
+                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://blog-nest-ui-98u2.vercel.app">Live Preview</a></Button>
+                </div>
             </div>
-          </CardBody>
-        </CardContainer>
-        </div>
-             <div>
-        <CardContainer className="inter-var w-80 rounded-xl border border-b-3 border-r-3">
-          <CardBody className="bg-black  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-zinc-600/[0.5] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-white dark:text-white">
-              Plex Visuals
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-    A sleek, responsive landing page built to convert visitors effectively.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image src={project2} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
-            </CardItem>
-            <div className="flex justify-between items-center mt-5">
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://github.com/AlokPy1484/plexFreelance"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal text-white  dark:text-white"
-              >
-                Github →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://plex-freelance.vercel.app"
-                className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold"
-              >
-                Live Preview
-              </CardItem>
             </div>
-          </CardBody>
-        </CardContainer>
-        </div>
-             <div>
-        <CardContainer className="inter-var w-80 rounded-xl border border-b-3 border-r-3">
-          <CardBody className="bg-black  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-zinc-600/[0.5] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-white dark:text-white">
-              Vibhava
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-             An innovative solution built for Smart India Hackathon to tackle real-world challenges.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image src={project3} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
-            </CardItem>
-            <div className="flex justify-between items-center mt-5">
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://github.com/AlokPy1484/Vibhava-nsa"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal text-white  dark:text-white"
-              >
-                Github →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://alokpy1484.github.io/Vibhava-nsa/"
-                className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold"
-              >
-                Live Preview
-              </CardItem>
+                      <div className="bg-black border-2 rounded-md px-2 border-zinc-900">
+            <div className="flex flex-col justify-center items-center w-80 p-2  rounded-md bg-black">
+                <div className=" text-2xl  text-white w-full">Plex Visuals</div>
+                <div className="text-sm text-zinc-600 py-2">A sleek, responsive landing page built to convert visitors effectively.</div>
+                <Image src={project2} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 py-4 grayscale hover:grayscale-0"/>
+                <div className="flex flex-row justify-between items-center py-4 w-full">
+                    <Button variant="ghost" className="text-white"><a href="https://github.com/AlokPy1484/plexFreelance">GitHub</a> </Button>
+                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://plex-freelance.vercel.app">Live Preview</a></Button>
+                </div>
             </div>
-          </CardBody>
-        </CardContainer>
-        </div>
+            </div>
+                      <div className="bg-black border-2 rounded-md px-2 border-zinc-900">
+            <div className="flex flex-col justify-center items-center w-80 p-2  rounded-md bg-black">
+                <div className=" text-2xl  text-white w-full">Vibhava</div>
+                <div className="text-sm text-zinc-600 py-2">An innovative solution built for Smart India Hackathon to tackle real-world challenges.</div>
+                <Image src={project3} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 py-4 grayscale hover:grayscale-0"/>
+                <div className="flex flex-row justify-between items-center py-4 w-full">
+                    <Button variant="ghost" className="text-white"><a href="https://github.com/AlokPy1484/Vibhava-nsa">GitHub</a> </Button>
+                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://alokpy1484.github.io/Vibhava-nsa/">Live Preview</a></Button>
+                </div>
+            </div>
+            </div>
+
+
       </div>
       </Vortex>
       </div>
