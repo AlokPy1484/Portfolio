@@ -17,7 +17,7 @@ function Hero(){
     return(
     <div className="flex w-screen h-full overflow-x-hidden bg-black">
       <Vortex rangeY={800} className="flex flex-col justify-center p-5 md:p-25 items-start h-screen ">
-      <div className="flex flex-row gap-2 md:gap-5 mt-500 md:mt-150 text-7xl text-white text-left">Hi, I'm
+      <div className="flex flex-row gap-2 md:gap-5 mt-440 md:mt-150 text-7xl text-white text-left">Hi, I'm
         <PointerHighlight rectangleClassName='border-white'>
         <div>Alok</div>
         </PointerHighlight>
@@ -39,7 +39,7 @@ function Hero(){
                 <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 py-4 grayscale hover:grayscale-0"/>
                 <div className="flex flex-row justify-between items-center py-4 w-full">
                     <Button variant="ghost" className="text-white"><a href="https://github.com/AlokPy1484/BlogNestUI">GitHub</a> </Button>
-                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://blog-nest-ui-98u2.vercel.app">Live Preview</a></Button>
+                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://blognest-landing.vercel.app">Live Preview</a></Button>
                 </div>
             </div>
             </div>
