@@ -14,8 +14,8 @@ function Hero(){
 
     return(
     <div className="flex w-screen h-full overflow-x-hidden bg-black">
-      <Vortex rangeY={800} className=" flex flex-col justify-center p-5 md:p-25 items-start h-screen ">
-      <div className="flex flex-row gap-2 md:gap-5 mt-500 md:mt-150 text-7xl text-white text-left">Hi, I'm
+      <Vortex rangeY={800} className="flex flex-col justify-center p-5 md:p-25 items-start h-screen ">
+      <div className="flex flex-row gap-2 md:gap-5 mt-440 md:mt-150 text-7xl text-white text-left">Hi, I'm
         <PointerHighlight rectangleClassName='border-white'>
         <div>Alok</div>
         </PointerHighlight>
@@ -26,41 +26,19 @@ function Hero(){
         I design and develop efficient, secure, and scalable full-stack web solutions — blending clean design, modern technology, and reliable performance.
         </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center w-full gap-5 md:gap-30 mt-5 md:mt-20">
-        <div>
-        <CardContainer className="inter-var w-80 rounded-xl border border-b-3 border-r-3">
-          <CardBody className="bg-black  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-zinc-600/[0.5] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-white dark:text-white">
-              Blognest
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
-              A modern, full-stack blogging platform for sharing ideas seamlessly.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 grayscale hover:grayscale-0"/>
-            </CardItem>
-            <div className="flex justify-between items-center mt-5">
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://github.com/AlokPy1484/BlogNestUI"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal text-white  dark:text-white"
-              >
-                Github →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="a"
-                href="https://blog-nest-ui-98u2.vercel.app"
-                className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold">
-                Live Preview
-              </CardItem>
+      <div className="flex flex-col md:flex-row justify-center items-center w-full gap-5 md:gap-30 mt-45 md:mt-20">
+       {/* <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1} repo="www.google.com"/>
+       <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1}/>
+       <ProjectCard title="BlogNest" description="A modern, full-stack blogging platform for sharing ideas seamlessly." image={project1}/> */}
+          <div className="bg-black border-2 rounded-md px-2 border-zinc-900">
+            <div className="flex flex-col justify-center items-center w-80 p-2  rounded-md bg-black">
+                <div className=" text-2xl  text-white w-full">BlogNest</div>
+                <div className="text-sm text-zinc-600 py-2">A modern, full-stack blogging platform for sharing ideas seamlessly.</div>
+                <Image src={project1} alt='project1' width={500} className="rounded-xl border border-b-3 border-r-2 py-4 grayscale hover:grayscale-0"/>
+                <div className="flex flex-row justify-between items-center py-4 w-full">
+                    <Button variant="ghost" className="text-white"><a href="https://github.com/AlokPy1484/BlogNestUI">GitHub</a> </Button>
+                    <Button className="bg-white hover:bg-black text-black  hover:text-white"><a href="https://blognest-landing.vercel.app">Live Preview</a></Button>
+                </div>
             </div>
           </CardBody>
         </CardContainer>
