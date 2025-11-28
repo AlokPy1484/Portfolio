@@ -1,4 +1,5 @@
 import { Cover } from "@/components/ui/cover";
+import Link from "next/link";
 
 
 function Navbar(){
@@ -26,11 +27,11 @@ function Navbar(){
 
 
     return(
-        <div className="fixed top-0 w-screen h-20 flex flex-row justify-center md:justify-between items-center md:px-30 backdrop-blur-xs text-white md:text-2xl z-100">
-            <div className="hidden md:block">Portfolio</div>
+        <div className="fixed top-0 w-screen h-20 flex flex-row justify-center md:justify-between items-center md:px-30 backdrop-blur-xl border-b border-b-zinc-600 text-white md:text-2xl z-100">
+            <div onClick={scrollToTop} className="hidden md:block cursor-pointer">Portfolio</div>
             <div className="flex flex-row justify-center items-center h-10 gap-10">
-                <div onClick={scrollToTop} className="cursor-pointer">Home</div>
-                <div>About</div>
+                <div className="cursor-pointer"> <Link href="/">Home</Link></div>
+                <div> <Link href="/pages/blog">Articles</Link> </div>
                 <div onClick={openResume} className="cursor-pointer">Resume</div>
                 <div onClick={scrollToContact} className="cursor-pointer"><Cover >Contact</Cover></div>
             </div>
