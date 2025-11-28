@@ -46,7 +46,7 @@ function Blog(){
                         <InteractiveGridPattern
                             width={20}
                             height={20}
-                            squares={[80, 80]}
+                            squares={[52,7}
                             squaresClassName="hover:fill-green-500"/>
                     </div>
                     </div>
