@@ -37,6 +37,29 @@ export function InteractiveGridPattern({
 }: InteractiveGridPatternProps) {
   const [horizontal, vertical] = squares
   const [hoveredSquare, setHoveredSquare] = useState<number | null>(null)
+  const [activeSquare, setActiveSquare] = useState<number[]>([
+  127, 75, 179, 231, 74, 178, 230, 282, 21, 177,
+  229, 279, 20, 124, 72, 123, 71, 69, 121, 173,
+  225, 66, 116, 168, 219, 111, 213, 315, 263, 0,
+  156, 1, 53, 105,
+  87, 139, 191, 347, 137, 189, 241, 293, 29, 31,
+  135, 187, 239, 291, 343, 133, 185, 339, 287, 286,
+  285, 337, 338, 78, 26
+]
+
+)
+  
+
+    const toggleActive = (index: number) => {
+    setActiveSquare((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index) // unselect
+        : [...prev, index] // select
+    )
+  }
+
+
+  
 
   return (
     <svg
@@ -51,6 +74,8 @@ export function InteractiveGridPattern({
       {Array.from({ length: horizontal * vertical }).map((_, index) => {
         const x = (index % horizontal) * width
         const y = Math.floor(index / horizontal) * height
+        const isActive = activeSquare.includes(index)
+        const isHovered = hoveredSquare === index
         return (
           <rect
             key={index}
@@ -60,10 +85,15 @@ export function InteractiveGridPattern({
             height={height}
             className={cn(
               "stroke-gray-400/30 transition-all duration-100 ease-in-out [&:not(:hover)]:duration-1000",
-              hoveredSquare === index ? "fill-gray-300/30" : "fill-transparent",
+              isActive
+                ? "fill-green-500" // permanent color
+                : isHovered
+                ? "fill-gray-300/30" // hover color
+                : "fill-transparent",
               squaresClassName
             )}
             onMouseEnter={() => setHoveredSquare(index)}
+            onClick={() => toggleActive(index)}
             onMouseLeave={() => setHoveredSquare(null)}
           />
         )
