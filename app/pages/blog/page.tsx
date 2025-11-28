@@ -30,7 +30,7 @@ function Blog(){
                 <div className="md:text-[20px] pt-8">After your repo is created and you’ve made your initial commits, here are the steps I personally follow to use GitHub properly :
                 </div>
                 <div className="flex flex-col justify-center items-center pt-12">
-                    <div className="text-2xl">1. Create a new branch for every feature:</div>
+                    <div className="text-2xl w-full text-left">1. Create a new branch for every feature:</div>
                     <div className="pt-2"> Never work directly on main. This helps you stay organised and prevents breaking your stable code. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque similique vel ducimus repellat sint ipsum deserunt illo numquam, asperiores molestiae.</div>
                     <Image src={blog2} alt="blog 2" className="m-4 my-8 rounded-xl"/>
                 </div>
