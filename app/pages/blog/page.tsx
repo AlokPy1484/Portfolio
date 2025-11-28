@@ -72,11 +72,11 @@ function Blog(){
                     </div>
                     </div>
                 <div className="pt-6">
-                        <div className="text-2xl">5. Open Pull Requests even for your own projects:</div>
+                        <div className="text-2xl">4. Open Pull Requests even for your own projects:</div>
                         <div className="pt-2">PRs give you a clean view of what changed and make your workflow more professional. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum alias sit ratione eius similique! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, ullam.</div>
                 </div>
                     <div className="pt-6">
-                        <div className="text-2xl">6.  Integrate AI code reviewers (like CodeRabbitAI) using GitHub Actions:</div>
+                        <div className="text-2xl">5.  Integrate AI code reviewers (like CodeRabbitAI) using GitHub Actions:</div>
                         <div className="pt-2">Automate review comments, get suggestions, and receive improvement tips on every pull request. This helps you learn clean coding practices faster and ensures you catch issues early even when you’re working solo.</div>
                         <div className="flex flex-row justify-center mt-8 mx-4 border-none">
                         <iframe
@@ -90,7 +90,7 @@ function Blog(){
                         allowFullScreen
                         />                    </div>
                 <div className="pt-6">
-                        <div className="text-2xl">4. Use Issues to track tasks:</div>
+                        <div className="text-2xl">6. Use Issues to track tasks:</div>
                         <div className="pt-2">Whether it’s bugs, ideas, or improvements. Create Issues and link them to commits/PRs. It’s how real teams work.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum alias sit ratione eius similique! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, ullam.</div>
                 </div>
                     <div className="py-6 ">
