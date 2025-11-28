@@ -72,10 +72,6 @@ function Blog(){
                     </div>
                     </div>
                 <div className="pt-6">
-                        <div className="text-2xl">4. Use Issues to track tasks:</div>
-                        <div className="pt-2">Whether it’s bugs, ideas, or improvements. Create Issues and link them to commits/PRs. It’s how real teams work.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum alias sit ratione eius similique! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, ullam.</div>
-                </div>
-                <div className="pt-6">
                         <div className="text-2xl">5. Open Pull Requests even for your own projects:</div>
                         <div className="pt-2">PRs give you a clean view of what changed and make your workflow more professional. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum alias sit ratione eius similique! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, ullam.</div>
                 </div>
