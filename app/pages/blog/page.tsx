@@ -17,7 +17,7 @@ function Blog(){
         <Navbar/>
         <div className="flex flex-row justify-start items-start w-screen h-full bg-black">
             <ScrollProgress className="fixed top-20" />
-            <div className=" text-white flex flex-col overflow-hidden w-screen md:w-[80vw] px-8 md:px-20 mt-50">
+            <div className=" text-white flex flex-col overflow-hidden w-screen md:w-[80vw] px-8 md:px-20 mt-30 md:mt-50">
                 <div className="text-3xl md:text-6xl py-6">GitHub for Beginners: Everything You Need to Know to Start Using Version Control</div>
                 <div className="text-zinc-400 md:text-2xl">If you’re new to development, one of the best skills you can pick up early is version control, and GitHub makes it incredibly approachable.</div>
                 <Image src={blog1} alt="blog" className="w-full mt-8 md:mt-30"/>
@@ -29,7 +29,7 @@ function Blog(){
                 </div>
                 <div className="md:text-[20px] pt-8">After your repo is created and you’ve made your initial commits, here are the steps I personally follow to use GitHub properly :
                 </div>
-                <div className="pt-12">
+                <div className="flex flex-col justify-center items-center pt-12">
                     <div className="text-2xl">1. Create a new branch for every feature:</div>
                     <div className="pt-2"> Never work directly on main. This helps you stay organised and prevents breaking your stable code. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque similique vel ducimus repellat sint ipsum deserunt illo numquam, asperiores molestiae.</div>
                     <Image src={blog2} alt="blog 2" className="m-4 my-8 rounded-xl"/>
@@ -41,13 +41,34 @@ function Blog(){
                 <div className="pt-6">
                     <div className="text-2xl">3. Push frequently:</div>
                     <div className="pt-2">Don’t wait till the end. Small, continuous pushes help you track progress and reduce merge conflicts. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam sunt pariatur! Quasi ducimus itaque debitis impedit beatae, quae voluptatibus?</div>
-                    <div>
-                    <div className="bg-black relative flex h-[200px] mt-4 w-full flex-col items-center justify-center overflow-hidden ">
+                    <div className="flex flex-col mt-4">
+                        <div className="flex flex-row justify-between items-center w-full pl-10 text-[12px] md:text-xl ">
+                            <div>Jan</div>
+                            <div>Feb</div>
+                            <div>Mar</div>
+                            <div>Apr</div>
+                            <div>May</div>
+                            <div>Jun</div>
+                            <div>Jul</div>
+                            <div>Aug</div>
+                            <div>Sep</div>
+                            <div>Oct</div>
+                            <div>Nov</div>
+                            <div>Dec</div>
+                        </div>
+                    <div className="flex flex-row justify-center items-center" >
+                        <div className="flex flex-col justify-between items-center h-[150px]">
+                            <div>Mon</div>
+                            <div>Wed</div>
+                            <div>Sat</div>
+                        </div>
+                    <div className="bg-black relative flex h-[180px] w-full flex-col items-center justify-center overflow-hidden ">
                         <InteractiveGridPattern
-                            width={20}
-                            height={20}
-                            squares={[52,7]}
+                            width={25}
+                            height={25}
+                            squares={[52, 7]}
                             squaresClassName="hover:fill-green-500"/>
+                    </div>
                     </div>
                     </div>
                 <div className="pt-6">
